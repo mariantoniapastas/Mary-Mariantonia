@@ -1,0 +1,211 @@
+{
+  "vigencia": "2026-09-30",
+  "notas": "Precios finales, sujetos a actualización. Sin precio mayorista. Los productos por kg se venden en cualquier gramaje. Las masas de ravioles y sorrentinos no llevan sal agregada; la sal está solo en los rellenos. En todas las pastas rellenas, cada unidad lleva todos los ingredientes del relleno juntos (no son cajas surtidas).",
+  "categorias": [
+    {
+      "id": "ravioles-trad",
+      "nombre": "Ravioles tradicionales",
+      "detalle": "caja de 48 unidades",
+      "productos": [
+        {
+          "nombre": "Ricotta",
+          "unidad": "caja",
+          "precio": 7400,
+          "disponibilidad": "disponible",
+          "relleno": "Ricotta sola",
+          "condimentos": "Sal, pimienta y nuez moscada (decirlo solo si preguntan)",
+          "venta": "Por caja entera",
+          "rinde": "2 porciones normales por caja"
+        },
+        {
+          "nombre": "Carne y verdura",
+          "unidad": "caja",
+          "precio": 7400,
+          "disponibilidad": "disponible",
+          "relleno": "Carne y verdura",
+          "condimentos": "Sal, pimienta y nuez moscada (decirlo solo si preguntan)",
+          "venta": "Por caja entera",
+          "rinde": "2 porciones normales por caja"
+        }
+      ]
+    },
+    {
+      "id": "ravioles-caseros",
+      "nombre": "Ravioles caseros",
+      "detalle": "caja de 24 unidades",
+      "rinde": "2 porciones justas por caja. Sugerencia: 2 cajas para 3 personas (vale para todas las variedades)",
+      "productos": [
+        {
+          "nombre": "Provolone",
+          "unidad": "caja",
+          "precio": 10900,
+          "relleno": "Carne, pollo, verdura y queso provolone",
+          "disponibilidad": "disponible",
+          "condimentos": "Sal, pimienta, nuez moscada y cebolla dorada (decirlo solo si preguntan)",
+          "venta": "Por caja entera"
+        },
+        {
+          "nombre": "Ricotta y jamón",
+          "unidad": "caja",
+          "precio": 9500,
+          "relleno": "Relleno de ricotta de los ravioles tradicionales + jamón cocido",
+          "disponibilidad": "disponible",
+          "condimentos": "Sal, pimienta y nuez moscada (decirlo solo si preguntan)",
+          "venta": "Por caja entera"
+        },
+        {
+          "nombre": "Ricotta y espinaca",
+          "unidad": "caja",
+          "precio": 9500,
+          "relleno": "Relleno de ricotta de los ravioles tradicionales + espinaca",
+          "disponibilidad": "disponible",
+          "condimentos": "Sal, pimienta y nuez moscada (decirlo solo si preguntan)",
+          "venta": "Por caja entera"
+        },
+        {
+          "nombre": "Sin sal",
+          "unidad": "caja",
+          "precio": 9500,
+          "relleno": "Ricotta y espinaca, preparado sin sal (la masa tampoco lleva sal agregada)",
+          "disponibilidad": "consultar",
+          "si_no_hay": "Tomar el pedido por encargo para el día siguiente",
+          "nota_disponibilidad": "Generalmente hay",
+          "condimentos": "Pimienta y nuez moscada, sin sal (decirlo solo si preguntan)",
+          "venta": "Por caja entera"
+        },
+        {
+          "nombre": "Primavera",
+          "unidad": "caja",
+          "precio": 11200,
+          "relleno": "Calabaza, queso y espinaca",
+          "masa": "Roja, saborizada naturalmente con tomate y extractos de tomate",
+          "disponibilidad": "disponible",
+          "nota_disponibilidad": "Generalmente hay todos los días, pero se agotan rápido",
+          "venta": "Por caja entera"
+        },
+        {
+          "nombre": "De la huerta",
+          "unidad": "caja",
+          "precio": 10900,
+          "relleno": "Espinaca y verdeo",
+          "masa": "Verde, saborizada naturalmente con espinaca",
+          "disponibilidad": "disponible",
+          "nota_disponibilidad": "Generalmente hay todos los días, pero se agotan rápido",
+          "venta": "Por caja entera"
+        },
+        { "nombre": "Albahaca", "unidad": "caja", "precio": 10900 },
+        { "nombre": "4 quesos", "unidad": "caja", "precio": 11200 },
+        { "nombre": "Teresa", "unidad": "caja", "precio": 10900 },
+        { "nombre": "Don Antonio", "unidad": "caja", "precio": 9500 },
+        { "nombre": "Milonga", "unidad": "caja", "precio": 11800 },
+        { "nombre": "Del pintor", "unidad": "caja", "precio": 11200 },
+        { "nombre": "Mariantonia", "unidad": "caja", "precio": 10900 },
+        { "nombre": "Bondiola", "unidad": "caja", "precio": 14500 },
+        { "nombre": "Veganos", "unidad": "caja", "precio": 12400 },
+        { "nombre": "Cordero", "unidad": "caja", "precio": 19100 },
+        { "nombre": "Seso", "unidad": "caja", "precio": 14800 },
+        { "nombre": "Salmón", "unidad": "caja", "precio": 23800 },
+        { "nombre": "Vacío", "unidad": "caja", "precio": 23200 }
+      ]
+    },
+    {
+      "id": "sorrentinos",
+      "nombre": "Sorrentinos",
+      "detalle": "caja de 20 unidades",
+      "productos": [
+        { "nombre": "Muzzarella y jamón", "unidad": "caja", "precio": 19100 },
+        { "nombre": "Calabaza y queso", "unidad": "caja", "precio": 21500 }
+      ]
+    },
+    {
+      "id": "fideos",
+      "nombre": "Fideos",
+      "productos": [
+        { "nombre": "Cinta al huevo", "unidad": "kg", "precio": 15900 },
+        { "nombre": "Cinta de espinaca", "unidad": "kg", "precio": 17100 },
+        { "nombre": "Fucciles", "unidad": "kg", "precio": 17100 },
+        { "nombre": "Fucciles verdes", "unidad": "kg", "precio": 17800 },
+        { "nombre": "Vermichelli", "unidad": "kg", "precio": 17100 },
+        { "nombre": "Mostacholes", "unidad": "kg", "precio": 17100 },
+        { "nombre": "Nápoles", "unidad": "kg", "precio": 17100 },
+        { "nombre": "Hélice", "unidad": "kg", "precio": 17100 },
+        { "nombre": "Caracolitos", "unidad": "kg", "precio": 17100 },
+        { "nombre": "Nero di seppia", "unidad": "kg", "precio": 23310 }
+      ]
+    },
+    {
+      "id": "noquis",
+      "nombre": "Ñoquis",
+      "productos": [
+        { "nombre": "Papa y ricotta", "unidad": "kg", "precio": 16600 },
+        { "nombre": "Soufflé de calabaza", "unidad": "kg", "precio": 18200 },
+        { "nombre": "Soufflé de espinaca", "unidad": "kg", "precio": 18200 },
+        { "nombre": "Soufflé Malbec", "unidad": "kg", "precio": 18200 }
+      ]
+    },
+    {
+      "id": "canelones",
+      "nombre": "Canelones",
+      "productos": [
+        { "nombre": "Ricotta y jamón", "unidad": "u", "precio": 6400 },
+        { "nombre": "Carne y verdura", "unidad": "u", "precio": 6400 },
+        { "nombre": "Ricotta y espinaca", "unidad": "u", "precio": 6400 }
+      ]
+    },
+    {
+      "id": "lasagnas",
+      "nombre": "Lasagnas",
+      "productos": [
+        { "nombre": "Ricotta y jamón", "unidad": "u", "precio": 7900 },
+        { "nombre": "Carne y verdura", "unidad": "u", "precio": 7900 },
+        { "nombre": "Ricotta y espinaca", "unidad": "u", "precio": 7900 },
+        { "nombre": "Argentana", "unidad": "u", "precio": 18800 }
+      ]
+    },
+    {
+      "id": "congelada",
+      "nombre": "Línea congelada",
+      "productos": [
+        { "nombre": "Provolone", "unidad": "u", "precio": 5800 },
+        { "nombre": "Ricotta y jamón", "unidad": "u", "precio": 5000 },
+        { "nombre": "Ricotta y espinaca", "unidad": "u", "precio": 5000 },
+        { "nombre": "Don Antonio", "unidad": "u", "precio": 5000 },
+        { "nombre": "Primavera", "unidad": "u", "precio": 5600 },
+        { "nombre": "De la huerta", "unidad": "u", "precio": 5400 }
+      ]
+    },
+    {
+      "id": "hecho-a-mano",
+      "nombre": "Hecho a mano",
+      "productos": [
+        { "nombre": "Lunettes", "unidad": "kg", "precio": 38600 },
+        { "nombre": "Cappelletti", "unidad": "kg", "precio": 38600 }
+      ]
+    },
+    {
+      "id": "salsas",
+      "nombre": "Salsas",
+      "detalle": "En Quilmes y Don Bosco: medida única de 450cc, rinde 2 a 3 porciones. El pesto viene en 100 g y rinde bastante (concentrado con aceite de oliva, almendras y queso parmesano).",
+      "productos": [
+        { "nombre": "Fileto", "unidad": "u", "precio": 5100 },
+        { "nombre": "Bolognesa", "unidad": "u", "precio": 9100 },
+        { "nombre": "Tuco con salchicha", "unidad": "u", "precio": 7600 },
+        { "nombre": "Pomarola", "unidad": "u", "precio": 5800 },
+        { "nombre": "Blanca", "unidad": "u", "precio": 4400 },
+        { "nombre": "Parisienne", "unidad": "u", "precio": 7600 },
+        { "nombre": "4 quesos", "unidad": "u", "precio": 8200 },
+        { "nombre": "Pesto", "unidad": "u", "precio": 6600 }
+      ]
+    },
+    {
+      "id": "comidas-caseras",
+      "nombre": "Comidas caseras",
+      "productos": [
+        { "nombre": "Albóndigas", "unidad": "kg", "precio": 73500 },
+        { "nombre": "Matambre", "unidad": "kg", "precio": 57800 },
+        { "nombre": "Estofado", "unidad": "kg", "precio": 66200 },
+        { "nombre": "Niños envueltos", "unidad": "kg", "precio": 63000 }
+      ]
+    }
+  ]
+}
