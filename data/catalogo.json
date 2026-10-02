@@ -102,8 +102,25 @@
           "disponibilidad": "disponible",
           "venta": "Por caja entera"
         },
-        { "nombre": "4 quesos", "unidad": "caja", "precio": 11200 },
-        { "nombre": "Teresa", "unidad": "caja", "precio": 10900 },
+        {
+          "nombre": "4 quesos",
+          "unidad": "caja",
+          "precio": 11200,
+          "relleno": "Muzzarella, fontina, dambo y port salut",
+          "masa": "Al huevo",
+          "disponibilidad": "según el día de retiro: viernes, sábados y domingos = disponible; martes y miércoles = consultar (a veces hay); lunes (solo abre Don Bosco) = consultar; jueves = no hay (ofrecé otro día u otra variedad)",
+          "venta": "Por caja entera"
+        },
+        {
+          "nombre": "Teresa",
+          "unidad": "caja",
+          "precio": 10900,
+          "relleno": "Ricotta, espinaca y queso azul",
+          "masa": "Al huevo",
+          "disponibilidad": "según el día de retiro: viernes, sábados y domingos = disponible; martes y miércoles = consultar (a veces hay); lunes (solo abre Don Bosco) = consultar; jueves = no hay (ofrecé otro día u otra variedad)",
+          "venta": "Por caja entera",
+          "historia": "Lleva el nombre de Teresa, la hermana de María Antonia. Como Mary es María Antonia, habla de ella como 'mi hermana Teresa'"
+        },
         { "nombre": "Don Antonio", "unidad": "caja", "precio": 9500 },
         { "nombre": "Milonga", "unidad": "caja", "precio": 11800 },
         { "nombre": "Del pintor", "unidad": "caja", "precio": 11200 },
