@@ -1,6 +1,6 @@
 {
   "vigencia": "2026-09-30",
-  "notas": "Precios finales, sujetos a actualización. Sin precio mayorista. Los productos por kg se venden en cualquier gramaje. Las masas de ravioles y sorrentinos no llevan sal agregada; la sal está solo en los rellenos. En todas las pastas rellenas, cada unidad lleva todos los ingredientes del relleno juntos (no son cajas surtidas).",
+  "notas": "Precios finales, sujetos a actualización. Sin precio mayorista. Los productos por kg se venden en cualquier gramaje. Las masas de ravioles y sorrentinos no llevan sal agregada; la sal está solo en los rellenos. En todas las pastas rellenas, cada unidad lleva todos los ingredientes del relleno juntos (no son cajas surtidas). Salvo que se indique una masa saborizada (roja de tomate, verde de espinaca, etc.), la masa es al huevo.",
   "categorias": [
     {
       "id": "ravioles-trad",
@@ -93,7 +93,15 @@
           "nota_disponibilidad": "Generalmente hay todos los días, pero se agotan rápido",
           "venta": "Por caja entera"
         },
-        { "nombre": "Albahaca", "unidad": "caja", "precio": 10900 },
+        {
+          "nombre": "Albahaca",
+          "unidad": "caja",
+          "precio": 10900,
+          "relleno": "Ricotta, nuez y albahaca",
+          "masa": "Al huevo",
+          "disponibilidad": "disponible",
+          "venta": "Por caja entera"
+        },
         { "nombre": "4 quesos", "unidad": "caja", "precio": 11200 },
         { "nombre": "Teresa", "unidad": "caja", "precio": 10900 },
         { "nombre": "Don Antonio", "unidad": "caja", "precio": 9500 },
