@@ -2,6 +2,7 @@
 import crypto from "node:crypto";
 import { waitUntil } from "@vercel/functions";
 import { procesarEntrada } from "../lib/flujo.js";
+import { registrarError } from "../lib/db.js";
 
 // Verificación inicial que hace Meta al configurar el webhook.
 export function GET(request) {
@@ -27,6 +28,9 @@ export async function POST(request) {
   let body;
   try { body = JSON.parse(cuerpo); } catch { return new Response("ok"); }
   // Respondemos enseguida a Meta y procesamos el mensaje en segundo plano.
-  waitUntil(procesarEntrada(body).catch((e) => console.error("Error procesando mensaje:", e)));
+  waitUntil(procesarEntrada(body).catch(async (e) => {
+    console.error("Error procesando mensaje:", e);
+    await registrarError(`Error procesando mensaje: ${e.message}`);
+  }));
   return new Response("ok");
 }
