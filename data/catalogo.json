@@ -121,75 +121,350 @@
           "venta": "Por caja entera",
           "historia": "Lleva el nombre de Teresa, la hermana de María Antonia. Como Mary es María Antonia, habla de ella como 'mi hermana Teresa'"
         },
-        { "nombre": "Don Antonio", "unidad": "caja", "precio": 9500 },
-        { "nombre": "Milonga", "unidad": "caja", "precio": 11800 },
-        { "nombre": "Del pintor", "unidad": "caja", "precio": 11200 },
-        { "nombre": "Mariantonia", "unidad": "caja", "precio": 10900 },
-        { "nombre": "Bondiola", "unidad": "caja", "precio": 14500 },
-        { "nombre": "Veganos", "unidad": "caja", "precio": 12400 },
-        { "nombre": "Cordero", "unidad": "caja", "precio": 19100 },
-        { "nombre": "Seso", "unidad": "caja", "precio": 14800 },
-        { "nombre": "Salmón", "unidad": "caja", "precio": 23800 },
-        { "nombre": "Vacío", "unidad": "caja", "precio": 23200 }
+        {
+          "nombre": "Don Antonio",
+          "unidad": "caja",
+          "precio": 9500,
+          "relleno": "Pollo, verdura, jamón y verdeo",
+          "masa": "Al huevo",
+          "disponibilidad": "disponible",
+          "venta": "Por caja entera",
+          "historia": "Lleva el nombre de Don Antonio, el papá de María Antonia. Como Mary es María Antonia, habla de él como 'mi papá'"
+        },
+        {
+          "nombre": "Milonga",
+          "unidad": "caja",
+          "precio": 11800,
+          "relleno": "Carne, espinaca fresca y parmesano",
+          "masa": "Al huevo",
+          "disponibilidad": "según el día de retiro: sábados y domingos = disponible; de lunes a viernes casi nunca hay: decí que es de fin de semana y ofrecé el sábado/domingo u otra variedad parecida (solo si el cliente insiste, registralo con consultar_stock=true)",
+          "venta": "Por caja entera",
+          "historia": "'¡Qué milonga!' era la expresión típica de Lorenzo, el marido de María Antonia: en vez de decir 'qué lío', 'qué macana' o 'qué quilombo', decía '¡Qué milonga!'. Como Mary es María Antonia, habla de él como 'mi marido, Lorenzo'"
+        },
+        {
+          "nombre": "Del pintor",
+          "unidad": "caja",
+          "precio": 11200,
+          "relleno": "Ricotta, muzzarella, albahaca, lomito ahumado y almendras",
+          "masa": "Al huevo",
+          "disponibilidad": "según el día de retiro: sábados y domingos = disponible; de lunes a viernes casi nunca hay: decí que es de fin de semana y ofrecé el sábado/domingo u otra variedad parecida (solo si el cliente insiste, registralo con consultar_stock=true)",
+          "venta": "Por caja entera",
+          "historia": "Se llaman 'del pintor' porque Lorenzo, el marido de María Antonia, era pintor de casas. Mary habla de él como 'mi marido, Lorenzo'"
+        },
+        {
+          "nombre": "Mariantonia",
+          "unidad": "caja",
+          "precio": 10900,
+          "relleno": "Ricotta, espinaca y jamón crudo",
+          "masa": "Al huevo",
+          "disponibilidad": "según el día de retiro: sábados y domingos = disponible; de lunes a viernes casi nunca hay: decí que es de fin de semana y ofrecé el sábado/domingo u otra variedad parecida (solo si el cliente insiste, registralo con consultar_stock=true)",
+          "venta": "Por caja entera",
+          "historia": "Es el raviol que lleva el nombre de la casa (y el de Mary)"
+        },
+        {
+          "nombre": "Bondiola",
+          "unidad": "caja",
+          "precio": 14500,
+          "relleno": "Bondiola braseada, cebolla caramelizada y panceta",
+          "masa": "Al huevo",
+          "disponibilidad": "disponible",
+          "venta": "Por caja entera"
+        },
+        {
+          "nombre": "Veganos",
+          "unidad": "caja",
+          "precio": 12400,
+          "relleno": "Calabaza, espinaca y zucchini",
+          "masa": "De remolacha, sin huevo",
+          "apto": "100% vegano: sin ningún ingrediente de origen animal, ni en la masa ni en el relleno",
+          "disponibilidad": "disponible (se elabora stock cada tanto y siempre hay)",
+          "venta": "Por caja entera. Se venden CONGELADOS",
+          "por_que_congelados": "Como la masa no lleva huevo, si se vendieran frescos se pegotearían por su elasticidad; por eso se elaboran y se congelan en el momento"
+        },
+        {
+          "nombre": "Cordero",
+          "unidad": "caja",
+          "precio": 19100,
+          "relleno": "Cordero puro",
+          "masa": "Al huevo",
+          "disponibilidad": "consultar",
+          "venta": "Por caja entera"
+        },
+        {
+          "nombre": "Seso",
+          "unidad": "caja",
+          "precio": 14800,
+          "relleno": "Seso y verdura",
+          "masa": "Al huevo",
+          "disponibilidad": "consultar",
+          "venta": "Por caja entera"
+        },
+        {
+          "nombre": "Salmón",
+          "unidad": "caja",
+          "precio": 23800,
+          "relleno": "Salmón rosado",
+          "masa": "Roja, saborizada naturalmente con tomate",
+          "disponibilidad": "consultar",
+          "venta": "Por caja entera"
+        },
+        {
+          "nombre": "Vacío",
+          "unidad": "caja",
+          "precio": 23200,
+          "relleno": "Vacío y provoleta",
+          "masa": "Al huevo",
+          "disponibilidad": "disponible",
+          "venta": "Por caja entera"
+        }
       ]
     },
     {
       "id": "sorrentinos",
       "nombre": "Sorrentinos",
       "detalle": "caja de 20 unidades",
+      "rinde": "2 porciones por caja (vale para todas las variedades)",
       "productos": [
-        { "nombre": "Muzzarella y jamón", "unidad": "caja", "precio": 19100 },
-        { "nombre": "Calabaza y queso", "unidad": "caja", "precio": 21500 }
+        {
+          "nombre": "Muzzarella y jamón",
+          "unidad": "caja",
+          "precio": 19100,
+          "relleno": "Muzzarella y jamón",
+          "masa": "Al huevo",
+          "disponibilidad": "disponible",
+          "nota_disponibilidad": "Se elabora todos los días hasta agotar stock",
+          "venta": "Por caja entera de 20 unidades"
+        },
+        {
+          "nombre": "Calabaza y queso",
+          "unidad": "caja",
+          "precio": 21500,
+          "relleno": "Calabaza y queso cremoso",
+          "masa": "Verde, saborizada naturalmente con espinaca",
+          "disponibilidad": "disponible",
+          "nota_disponibilidad": "Se elabora todos los días hasta agotar stock",
+          "venta": "Por caja entera de 20 unidades"
+        }
       ]
     },
     {
       "id": "fideos",
       "nombre": "Fideos",
+      "detalle": "se venden por peso, sin cantidad mínima. Masa al huevo con sémola (salvo los saborizados, que llevan además su ingrediente)",
+      "rinde": "Porción justa: 180 g; porción abundante (como servimos nosotros): 200-230 g. Sugerencia: 1/2 kg para 2 personas, 750-800 g para 3, 1 kg para 5",
       "productos": [
-        { "nombre": "Cinta al huevo", "unidad": "kg", "precio": 15900 },
-        { "nombre": "Cinta de espinaca", "unidad": "kg", "precio": 17100 },
-        { "nombre": "Fucciles", "unidad": "kg", "precio": 17100 },
-        { "nombre": "Fucciles verdes", "unidad": "kg", "precio": 17800 },
-        { "nombre": "Vermichelli", "unidad": "kg", "precio": 17100 },
-        { "nombre": "Mostacholes", "unidad": "kg", "precio": 17100 },
-        { "nombre": "Nápoles", "unidad": "kg", "precio": 17100 },
-        { "nombre": "Hélice", "unidad": "kg", "precio": 17100 },
-        { "nombre": "Caracolitos", "unidad": "kg", "precio": 17100 },
-        { "nombre": "Nero di seppia", "unidad": "kg", "precio": 23310 }
+        {
+          "nombre": "Cinta al huevo",
+          "unidad": "kg",
+          "precio": 15900,
+          "descripcion": "Fideos cinta (no son pappardelle ni tagliatelle). Mismo precio en 3 anchos: anchos, medianos y yemita (los más finitos). Preguntale al cliente cuál quiere y anotalo en el pedido",
+          "masa": "Al huevo con sémola",
+          "disponibilidad": "disponible",
+          "venta": "Por peso, sin mínimo"
+        },
+        {
+          "nombre": "Cinta de espinaca",
+          "unidad": "kg",
+          "precio": 17100,
+          "descripcion": "Fideos cinta verdes. Mismo precio en 3 anchos: anchos, medianos y yemita (los más finitos). Preguntale al cliente qué ancho quiere y anotalo en el pedido. Anchos y medianos: disponibles todos los días. Yemita de espinaca: consultar (registralo con consultar_stock=true; no le digas al cliente que no se están haciendo)",
+          "masa": "Verde, al huevo con sémola, saborizada naturalmente con espinaca",
+          "disponibilidad": "disponible",
+          "venta": "Por peso, sin mínimo"
+        },
+        {
+          "nombre": "Fucciles",
+          "unidad": "kg",
+          "precio": 17100,
+          "descripcion": "Fideos largos enrulados, tipo cable de teléfono",
+          "masa": "Al huevo con sémola",
+          "disponibilidad": "disponible",
+          "venta": "Por peso, sin mínimo"
+        },
+        {
+          "nombre": "Fucciles verdes",
+          "unidad": "kg",
+          "precio": 17800,
+          "descripcion": "Fideos largos enrulados tipo cable de teléfono, verdes",
+          "masa": "Verde, al huevo con sémola, saborizada naturalmente con espinaca",
+          "disponibilidad": "consultar",
+          "venta": "Por peso, sin mínimo"
+        },
+        {
+          "nombre": "Vermichelli",
+          "unidad": "kg",
+          "precio": 17100,
+          "descripcion": "Fideos largos y finos, tipo spaghetti",
+          "masa": "Al huevo con sémola",
+          "disponibilidad": "disponible",
+          "venta": "Por peso, sin mínimo"
+        },
+        {
+          "nombre": "Mostacholes",
+          "unidad": "kg",
+          "precio": 17100,
+          "descripcion": "Pasta corta tipo coditos, rayados",
+          "masa": "Al huevo con sémola",
+          "disponibilidad": "disponible",
+          "venta": "Por peso, sin mínimo"
+        },
+        {
+          "nombre": "Nápoles",
+          "unidad": "kg",
+          "precio": 17100,
+          "descripcion": "Fideos largos con un agujerito en el medio (huecos, tipo bucatini)",
+          "masa": "Al huevo con sémola",
+          "disponibilidad": "disponible",
+          "venta": "Por peso, sin mínimo"
+        },
+        {
+          "nombre": "Hélice",
+          "unidad": "kg",
+          "precio": 17100,
+          "descripcion": "Fideos espiralados de largo mediano (no tan cortos). Distintos de los fucciles, que son largos y enrulados tipo cable de teléfono",
+          "masa": "Al huevo con sémola",
+          "disponibilidad": "disponible",
+          "venta": "Por peso, sin mínimo"
+        },
+        {
+          "nombre": "Caracolitos",
+          "unidad": "kg",
+          "precio": 17100,
+          "descripcion": "Caracolitos chicos, tipo para sopa",
+          "masa": "Al huevo con sémola",
+          "disponibilidad": "consultar",
+          "venta": "Por peso, sin mínimo"
+        },
+        {
+          "nombre": "Nero di seppia",
+          "unidad": "kg",
+          "precio": 30000,
+          "descripcion": "Cintas anchas negras",
+          "masa": "Al huevo con sémola, coloreada naturalmente con tinta de calamar",
+          "disponibilidad": "NO DISPONIBLE POR AHORA: no lo ofrezcas ni lo menciones. Si alguien lo pide o pregunta, decile con cariño que próximamente vamos a tener y ofrecé otra cinta (al huevo o de espinaca). No lo registres en pedidos",
+          "venta": "Por peso, sin mínimo"
+        }
       ]
     },
     {
       "id": "noquis",
       "nombre": "Ñoquis",
+      "detalle": "se venden por peso, sin cantidad mínima",
+      "rinde": "Porción de 250 a 300 g. Sugerencia: 1 kg para 3 personas",
       "productos": [
-        { "nombre": "Papa y ricotta", "unidad": "kg", "precio": 16600 },
-        { "nombre": "Soufflé de calabaza", "unidad": "kg", "precio": 18200 },
-        { "nombre": "Soufflé de espinaca", "unidad": "kg", "precio": 18200 },
-        { "nombre": "Soufflé Malbec", "unidad": "kg", "precio": 18200 }
+        {
+          "nombre": "Papa y ricotta",
+          "unidad": "kg",
+          "precio": 16600,
+          "ingredientes": "Semolín, papa, ricotta, manteca y sal (se venden como 'de papa y ricotta')",
+          "disponibilidad": "disponible",
+          "venta": "Por peso, sin mínimo"
+        },
+        {
+          "nombre": "Soufflé de calabaza",
+          "unidad": "kg",
+          "precio": 18200,
+          "descripcion": "Ñoquis soufflé: más livianos y esponjosos",
+          "ingredientes": "Harina, huevo y puré de calabaza asada",
+          "disponibilidad": "SOLO el día 29 de cada mes, hasta agotar stock (el día de retiro tiene que ser un 29). Otros días no hay: contale con cariño que son especiales del 29 y ofrecé los de papa y ricotta",
+          "venta": "Por peso, sin mínimo"
+        },
+        {
+          "nombre": "Soufflé de espinaca",
+          "unidad": "kg",
+          "precio": 18200,
+          "descripcion": "Ñoquis soufflé: más livianos y esponjosos",
+          "ingredientes": "Harina, huevo y espinaca",
+          "disponibilidad": "SOLO el día 29 de cada mes, hasta agotar stock (el día de retiro tiene que ser un 29). Otros días no hay: contale con cariño que son especiales del 29 y ofrecé los de papa y ricotta",
+          "venta": "Por peso, sin mínimo"
+        },
+        {
+          "nombre": "Soufflé Malbec",
+          "unidad": "kg",
+          "precio": 18200,
+          "disponibilidad": "DISCONTINUADO: no lo ofrezcas ni lo menciones. Si alguien lo pide, decile con cariño que por ahora no los tenemos (sin dar explicaciones) y ofrecé los soufflé de calabaza o espinaca (solo los 29) o los de papa y ricotta. No lo registres en pedidos"
+        }
       ]
     },
     {
       "id": "canelones",
       "nombre": "Canelones",
+      "detalle": "se venden por unidad (1 canelón), en la cantidad que quieran. Son muy grandes y abundantes. La masa es de panqueque",
+      "rinde": "1 canelón por persona; 1 y medio como máximo (2 es casi imposible de comer)",
+      "con_salsa": "Se pueden llevar SOLOS (la salsa se compra aparte) o CON SALSA, listos para calentar en horno o microondas (otro packaging). Con salsa cuesta $1.500 más por canelón (ej: $6.400 solo → $7.900 con salsa), cualquiera sea la salsa. La salsa la elige el cliente entre las que hacemos (ver Salsas). Preguntale siempre al cliente si los quiere solos o con salsa (y cuál), aclarale la diferencia, y en el pedido poné el producto como 'Canelones ... con salsa X' o 'Canelones ... solos' con el precio que corresponde",
       "productos": [
-        { "nombre": "Ricotta y jamón", "unidad": "u", "precio": 6400 },
-        { "nombre": "Carne y verdura", "unidad": "u", "precio": 6400 },
-        { "nombre": "Ricotta y espinaca", "unidad": "u", "precio": 6400 }
+        {
+          "nombre": "Ricotta y jamón",
+          "unidad": "u",
+          "precio": 6400,
+          "relleno": "Relleno de ricotta de los ravioles tradicionales + jamón cocido",
+          "disponibilidad": "disponible",
+          "venta": "Por unidad, sola o con salsa"
+        },
+        {
+          "nombre": "Carne y verdura",
+          "unidad": "u",
+          "precio": 6400,
+          "relleno": "El mismo de los ravioles tradicionales de carne y verdura",
+          "disponibilidad": "disponible",
+          "venta": "Por unidad, sola o con salsa"
+        },
+        {
+          "nombre": "Ricotta y espinaca",
+          "unidad": "u",
+          "precio": 6400,
+          "relleno": "El mismo de los ravioles de ricotta y espinaca (base de ricotta + espinaca)",
+          "disponibilidad": "disponible",
+          "venta": "Por unidad, sola o con salsa"
+        }
       ]
     },
     {
       "id": "lasagnas",
       "nombre": "Lasagnas",
+      "detalle": "se venden por unidad (1 lasagna individual), en la cantidad que quieran. Son grandes y abundantes",
+      "rinde": "1 por persona; 1 y media como máximo",
+      "jamon": "Todas llevan, además del relleno, jamón cocido y muzzarella. Al describirlo nunca uses la palabra 'feta'. Si el cliente la pide sin jamón, se puede: anotalo en las notas del pedido",
+      "con_salsa": "Igual que los canelones: se pueden llevar SOLAS (la salsa se compra aparte) o CON SALSA, listas para calentar en horno o microondas (otro packaging). Con salsa cuesta $1.500 más por unidad, cualquiera sea la salsa, que elige el cliente entre las que hacemos. Preguntale siempre si las quiere solas o con salsa (y cuál), y en el pedido poné 'Lasagna ... con salsa X' o 'Lasagna ... sola' con el precio que corresponde",
       "productos": [
-        { "nombre": "Ricotta y jamón", "unidad": "u", "precio": 7900 },
-        { "nombre": "Carne y verdura", "unidad": "u", "precio": 7900 },
-        { "nombre": "Ricotta y espinaca", "unidad": "u", "precio": 7900 },
-        { "nombre": "Argentana", "unidad": "u", "precio": 18800 }
+        {
+          "nombre": "Ricotta y jamón",
+          "unidad": "u",
+          "precio": 7900,
+          "relleno": "Relleno de ricotta y jamón (como los canelones), con jamón cocido y muzzarella",
+          "disponibilidad": "por encargo: con 1 día de anticipación (se puede retirar a partir del día siguiente al que se pide)",
+          "venta": "Por unidad, sola o con salsa"
+        },
+        {
+          "nombre": "Carne y verdura",
+          "unidad": "u",
+          "precio": 7900,
+          "relleno": "Relleno de carne y verdura (como los canelones), con jamón cocido y muzzarella",
+          "disponibilidad": "por encargo: con 1 día de anticipación (se puede retirar a partir del día siguiente al que se pide)",
+          "venta": "Por unidad, sola o con salsa"
+        },
+        {
+          "nombre": "Ricotta y espinaca",
+          "unidad": "u",
+          "precio": 7900,
+          "relleno": "Relleno de ricotta y espinaca (como los canelones), con jamón cocido y muzzarella",
+          "disponibilidad": "por encargo: con 1 día de anticipación (se puede retirar a partir del día siguiente al que se pide)",
+          "venta": "Por unidad, sola o con salsa"
+        },
+        {
+          "nombre": "Argentana",
+          "unidad": "u",
+          "precio": 18800,
+          "descripcion": "La tradicional lasagna estilo italiana: 2 pisos separados por masa, rellenos de carne picada de vaca y de cerdo, espinaca, salsa de tomate, albahaca y muzzarella. Muy abundante: casi 700 g cada una. A diferencia de las otras lasagnas, NO lleva el agregado de jamón cocido y muzzarella, y ya viene con su salsa de tomate (no tiene la opción solas / con salsa)",
+          "disponibilidad": "consultar",
+          "venta": "Por unidad",
+          "historia": "Se llama 'Argentana' porque es la tradicional italiana, pero bien argentina"
+        }
       ]
     },
     {
       "id": "congelada",
       "nombre": "Línea congelada",
+      "estado": "SUSPENDIDA hasta nuevo aviso: no ofrezcas ni menciones ningún producto de esta línea. Si alguien la pide, decile con cariño que por ahora no la tenemos y ofrecé los ravioles caseros (frescos) del mismo sabor. No la registres en pedidos",
       "productos": [
         { "nombre": "Provolone", "unidad": "u", "precio": 5800 },
         { "nombre": "Ricotta y jamón", "unidad": "u", "precio": 5000 },
@@ -203,8 +478,28 @@
       "id": "hecho-a-mano",
       "nombre": "Hecho a mano",
       "productos": [
-        { "nombre": "Lunettes", "unidad": "kg", "precio": 38600 },
-        { "nombre": "Cappelletti", "unidad": "kg", "precio": 38600 }
+        {
+          "nombre": "Lunettes",
+          "unidad": "kg",
+          "precio": 38600,
+          "descripcion": "Pasta rellena con forma de medialuna, hecha a mano",
+          "relleno": "Lomo al champignon",
+          "masa": "Bien gruesa, hecha con crema",
+          "rinde": "1 caja trae aprox. 500 g y rinde 2 porciones bien abundantes",
+          "disponibilidad": "consultar",
+          "venta": "Por peso (precio por kg). Se guardan en cajas de aprox. 500 g, pero se puede pedir cualquier cantidad. El precio final se ajusta al peso real: en el pedido usá kg (ej: 0.5 por una caja) y aclarale al cliente que el total es aproximado"
+        },
+        {
+          "nombre": "Cappelletti",
+          "unidad": "kg",
+          "precio": 38600,
+          "descripcion": "Pasta rellena con forma de sombrerito, hecha a mano",
+          "relleno": "Pollo al verdeo",
+          "masa": "Bien gruesa, hecha con crema",
+          "rinde": "1 caja trae aprox. 500 g y rinde 2 porciones bien abundantes",
+          "disponibilidad": "consultar",
+          "venta": "Por peso (precio por kg). Se guardan en cajas de aprox. 500 g, pero se puede pedir cualquier cantidad. El precio final se ajusta al peso real: en el pedido usá kg (ej: 0.5 por una caja) y aclarale al cliente que el total es aproximado"
+        }
       ]
     },
     {

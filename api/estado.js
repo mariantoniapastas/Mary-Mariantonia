@@ -1,6 +1,6 @@
 // Diagnóstico: números configurados, últimos pedidos y últimos errores.
 // Uso: https://TU-PROYECTO.vercel.app/api/estado?clave=CRON_SECRET
-import { redis } from "../lib/db.js";
+import { redis, tareasAbiertas } from "../lib/db.js";
 import { SUC_IDS, ESTADOS, estaAbierta } from "../lib/negocio.js";
 
 const digitos = (s) => String(s || "").replace(/\D/g, "");
@@ -35,6 +35,7 @@ export async function GET(request) {
     modelo: process.env.CLAUDE_MODEL || "claude-haiku-4-5",
     sucursales,
     ultimos_pedidos: pedidos,
+    consultas_y_traslados_abiertos: (await tareasAbiertas()).map((t) => ({ id: t.id, tipo: t.tipo, pedido: t.pedido, sucursal: t.suc, recordatorios: t.intentos })),
     ultimos_errores: (await redis.lrange("errores", 0, 9)) || [],
   });
 }
